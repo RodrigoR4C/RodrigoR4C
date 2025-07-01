@@ -1,21 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        h1 { color: #333; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Seu Nome</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bem-vindo ao Meu Portfólio</h1>
-    <p>Sou Rodrigo Costa Brasil, estudante de Engenharia da Computação, e estes são alguns dos meus projetos desenvolvidos durante esse semestre </p>
-    <p><a href="techsolutions_primeiro.html">TechSolutions - Página da Startup</a></p>
+  <header>
+    <h1>Seu Nome</h1>
+    <p>Desenvolvedor Web | Estudante | Apaixonado por tecnologia</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor em formação com interesse em criação de sites, aplicações web e automações. Estou sempre aprendendo novas tecnologias e buscando desafios.</p>
+  </section>
 
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projeto">
+      <h3>Projeto 1</h3>
+      <p>Descrição do projeto. O que ele faz, quais tecnologias usou.</p>
+      <a href="https://github.com/seu-usuario/projeto1" target="_blank">Ver no GitHub</a>
+    </div>
+    <div class="projeto">
+      <h3>Projeto 2</h3>
+      <p>Outro projeto interessante com breve descrição.</p>
+      <a href="https://github.com/seu-usuario/projeto2" target="_blank">Ver no GitHub</a>
+    </div>
+  </section>
 
-    
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:seu@email.com">seu@email.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/seuusuario/" target="_blank">/seuusuario</a></p>
+    <p>GitHub: <a href="https://github.com/seu-usuario" target="_blank">@seu-usuario</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
+🎨 style.css
+css
+Copiar
+Editar
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.projeto {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.projeto a {
+  color: #0066cc;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
