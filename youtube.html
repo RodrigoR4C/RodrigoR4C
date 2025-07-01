@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FF0000;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .search-bar {
+            width: 300px;
+            padding: 5px;
+        }
+
+        .search-button {
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+
+        main {
+            padding: 16px;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .video {
+            margin: 10px;
+            width: 200px;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 113px; /* Proporção correta para vídeos */
+        }
+
+        .video h3 {
+            font-size: 16px;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">YouTube</div>
+        <input type="text" placeholder="Pesquisar" class="search-bar">
+        <button class="search-button">Buscar</button>
+    </header>
+    <main>
+        <div class="video-container">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Título do Vídeo 1</h3>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+                <h3>Título do Vídeo 2</h3>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Título do Vídeo 3</h3>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/9Sc_irG1ZbA" frameborder="0" allowfullscreen></iframe>
+                <h3>Título do Vídeo 4</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
